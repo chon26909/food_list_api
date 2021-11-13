@@ -5,6 +5,8 @@ class Card extends StatelessWidget {
   final String rating;
   final String cookTime;
   final String thumbnailUrl;
+  
+  // ignore: prefer_const_constructors_in_immutables
   Card({
     required this.title,
     required this.cookTime,
