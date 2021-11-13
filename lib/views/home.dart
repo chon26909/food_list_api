@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         body: const FoodCard(
-            title: "กระเพรา",
+            title: "ข้าว",
             cookTime: "60",
             rating: "5",
             thumbnailUrl:
