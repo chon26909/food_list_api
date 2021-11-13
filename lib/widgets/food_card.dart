@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Card extends StatelessWidget {
+class FoodCard extends StatelessWidget {
   final String title;
   final String rating;
   final String cookTime;
   final String thumbnailUrl;
-  
-  // ignore: prefer_const_constructors_in_immutables
-  Card({
+
+  const FoodCard({
+    Key? key,
     required this.title,
     required this.cookTime,
     required this.rating,
     required this.thumbnailUrl,
-  });
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -110,4 +110,3 @@ class Card extends StatelessWidget {
     );
   }
 }
-
