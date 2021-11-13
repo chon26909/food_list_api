@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class RecipeCard extends StatelessWidget {
+class Card extends StatelessWidget {
   final String title;
   final String rating;
   final String cookTime;
   final String thumbnailUrl;
-  RecipeCard({
+  Card({
     required this.title,
     required this.cookTime,
     required this.rating,
@@ -14,7 +14,7 @@ class RecipeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 22, vertical: 10),
+      margin: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
       width: MediaQuery.of(context).size.width,
       height: 180,
       decoration: BoxDecoration(
@@ -23,9 +23,9 @@ class RecipeCard extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.6),
-            offset: Offset(
-              0.0,
-              10.0,
+            offset: const Offset(
+              0,
+              10,
             ),
             blurRadius: 10.0,
             spreadRadius: -6.0,
@@ -47,7 +47,7 @@ class RecipeCard extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 5.0),
               child: Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 19,
                 ),
                 overflow: TextOverflow.ellipsis,
@@ -70,7 +70,7 @@ class RecipeCard extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.star,
                         color: Colors.yellow,
                         size: 18,
@@ -89,7 +89,7 @@ class RecipeCard extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.schedule,
                         color: Colors.yellow,
                         size: 18,
